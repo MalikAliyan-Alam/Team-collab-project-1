@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Deals - Amazon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="deal.css">
+</head>
+<body>
+     <header>
+        <nav class="head-navbar">
+            <a href="#">
+                <img src="./assets/Screenshot_2026-01-10_073802-removebg-preview.png"
+                    alt="">
+            </a>
+
+            <div>
+                <span class="del ps-4">Deliver to</span>
+                <div class="nav-div-2 d-flex align-items-center">
+                    <i class="fa-solid fa-location-dot pb-3"></i>
+                    <p class="pak">Pakistan</p>
+                </div>
+            </div>
+
+            <div class="amazon-search-container">
+                <div class="search-wrapper">
+                    <div class="search-category">All <span style="font-size:9px;"></span></div>
+
+                    <input type="text" class="search-input" placeholder="Search Amazon" autocomplete="off" />
+
+                    <button class="search-button">
+                        <svg class="search-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flag-div">
+                <img src="https://thumbs.dreamstime.com/b/american-flag-waving-wind-isolated-usa-background-symbole-157940244.jpg?w=768"
+                    class="flag">
+                <select class="flag-sel">
+                    <option>EN</option>
+                    <option>UR</option>
+                </select>
+            </div>
+
+            <div>
+                <a href="#" class="nav-account" id="nav-account-link">
+                    <span class="hello-line">Hello, sign in</span>
+                    <span class="account-text">
+                        Account & Lists
+                        <span class="arrow">▼</span>
+                    </span>
+                </a>
+            </div>
+
+            <div>
+                <a href="#" class="nav-account" id="nav-account-link">
+                    <span class="repums">Returns</span>
+                    <span class="repums-text">
+                        & orders
+                    </span>
+                </a>
+            </div>
+
+            <div class="card-div">
+                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                <p class="cart-p">Cart</p>
+            </div>
+        </nav>
+    </header>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <div class="menu-icon" id="menuIcon">
+                ☰
+            </div>
+            <li><a href="./index.html">All</a></li>
+            <li><a href="./TodaysDeals.html">Today's Deals</a></li>
+            <li><a href="./registry.html">Registry</a></li>
+            <li><a href="./customer.html">Customer Service</a></li>
+            <li><a href="#Prime Videos">Prime Videos</a></li>
+            <li><a href="#Gift Cards">Gift Cards</a></li>
+            <li><a href="#Sell">Sell</a></li>
+        </ul>
+    </nav>
+
+    <div class="td">
+        <h1>Today's Deals</h1>
+    </div>
+
+    <!-- 3 Categories with 4 Products Each -->
+    <main class="deals-container">
+        <!-- Category 1: Electronics -->
+        <section class="category-section">
+            <div class="category-header">
+                <h2>Electronics <span class="category-badge">4 Deals</span></h2>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61PPlQVg8xL._AC_UY218_.jpg" alt="AirPods Pro">
+                        <span class="deal-badge">Deal</span>
+                        <div class="deal-timer">8h 15m</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="category-tag electronics">Electronics</div>
+                        <h3>Apple AirPods Pro (2nd Gen)</h3>
+                        <div class="price-section">
+                            <span class="current-price">$169</span>
+                            <span class="original-price">$249</span>
+                            <span class="savings">32% off</span>
+                        </div>
+                        <div class="product-footer">
+                            <span>Limited stock</span>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/614l20nEhmL._AC_UY218_.jpg" alt="Echo Dot">
+                        <span class="deal-badge">Deal</span>
+                        <div class="deal-timer">10h 30m</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="category-tag electronics">Electronics</div>
+                        <h3>Echo Dot (5th Gen) Smart Speaker</h3>
+                        <div class="price-section">
+                            <span class="current-price">$29.99</span>
+                            <span class="original-price">$49.99</span>
+                            <span class="savings">40% off</span>
+                        </div>
+                        <div class="product-footer">
+                            <span>Limited stock</span>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61CI2BW3JLL._AC_UY218_.jpg" alt="Fire TV">
+                        <span class="deal-badge">Deal</span>
+                        <div class="deal-timer">6h 45m</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="category-tag electronics">Electronics</div>
+                        <h3>Fire TV Stick 4K Streaming Device</h3>
+                        <div class="price-section">
+                            <span class="current-price">$29.99</span>
+                            <span class="original-price">$49.99</span>
+                            <span class="savings">40% off</span>
+                        </div>
+                        <div class="product-footer">
+                            <span>Limited stock</span>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61Xcn+u-ifL._AC_UY218_.jpg" alt="Samsung TV">
+                        <span class="deal-badge">Deal</span>
+                        <div class="deal-timer">12h 20m</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="category-tag electronics">Electronics</div>
+                        <h3>Samsung 55" Crystal UHD Smart TV</h3>
+                        <div class="price-section">
+                            <span class="current-price">$397.99</span>
+                            <span class="original-price">$497.99</span>
+                            <span class="savings">20% off</span>
+                        </div>
+                        <div class="product-footer">
+                            <span>Limited stock</span>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category 2: Home -->
+        <section class="category-section">
+            <div class="category-header">
+                <h2>Home <span class="category-badge">4 Deals</span></h2>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/51ulnRUpSRL._AC_UY218_.jpg" alt="Instant Pot">
+                        <span class="deal-badge">Deal</span>
+                        <div class="deal-timer">9h 10m</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="category-tag home">Home</div>
+                        <h3>Instant Pot Duo 7-in-1 Cooker</h3>
+                        <div class="price-section">
+                            <span class="current-price">$79.99</span>
+                            <span class="original-price">$129.99</span>
+                            <span class="savings">38% off</span>
+                        </div>
+                        <div class="product-footer">
+                            <span>Limited stock</span>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 more Home products... -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/81XI5dLmHnL._AC_UY218_.jpg" alt="Ninja">
+                        <span class="deal-badge">Deal</span>
+                        <div class="deal-timer">7h 25m</div>
+                    </div>
+                        <div class="product-info">
+                            <div class="category-tag home">Home</div>
+                            <h3>Ninja Air Fryer Max XL</h3>
+                            <div class="price-section">
+                                <span class="current-price">$99.99</span>
+                                <span class="original-price">$169.99</span>
+                                <span class="savings">41% off</span>
+                            </div>
+                            <div class="product-footer">
+                                <span>Limited stock</span>
+                                <button class="buy-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71HnZu2YlrL._AC_UY218_.jpg" alt="Dyson">
+                        <span class="deal-badge">Deal</span>
+                        <div class="deal-timer">11h 5m</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="category-tag home">Home</div>
+                        <h3>Dyson V8 Cordless Vacuum</h3>
+                        <div class="price-section">
+                            <span class="current-price">$299.99</span>
+                            <span class="original-price">$469.99</span>
+                            <span class="savings">36% off</span>
+                        </div>
+                        <div class="product-footer">
+                            <span>Limited stock</span>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="http://m.media-amazon.com/images/I/81muNgCDz2L._AC_SX322_CB1169409_QL70_.jpg" alt="KitchenAid">
+                        <span class="deal-badge">Deal</span>
+                        <div class="deal-timer">5h 40m</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="category-tag home">Home</div>
+                        <h3>KitchenAid 7-Cup Food Processor</h3>
+                        <div class="price-section">
+                            <span class="current-price">$69.99</span>
+                            <span class="original-price">$99.99</span>
+                            <span class="savings">30% off</span>
+                        </div>
+                        <div class="product-footer">
+                            <span>Limited stock</span>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category 3: Fashion -->
+        <section class="category-section">
+            <div class="category-header">
+                <h2>Fashion <span class="category-badge">2 Deals</span></h2>
+            </div>
+            <div class="products-grid">
+                <!-- 4 Fashion products (similar structure) -->
+                <div class="product-card"><div class="product-image">
+                    <img src="https://m.media-amazon.com/images/I/81aBo6D800L._AC_UL320_.jpg" alt="Levis">
+                    <span class="deal-badge">Deal</span>
+                    <div class="deal-timer">4h 50m</div>
+                </div>
+                <div class="product-info">
+                    <div class="category-tag fashion">Fashion</div>
+                    <h3>Levi's Men's 511 Slim Fit Jeans</h3>
+                    <div class="price-section">
+                        <span class="current-price">$39.99</span>
+                        <span class="original-price">$69.50</span>
+                        <span class="savings">42% off</span>
+                    </div>
+                    <div class="product-footer">
+                        <span>Limited stock</span>
+                        <button class="buy-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71LouOP0WBL._AC_UL320_.jpg" alt="Ray-Ban">
+                        <span class="deal-badge">Deal</span>
+                        <div class="deal-timer">13h 10m</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="category-tag fashion">Fashion</div>
+                        <h3>Ray-Ban Aviator Sunglasses</h3>
+                        <div class="price-section">
+                            <span class="current-price">$109</span>
+                            <span class="original-price">$164</span>
+                            <span class="savings">33% off</span>
+                        </div>
+                        <div class="product-footer">
+                            <span>Limited stock</span>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add 2 more fashion products -->
+            </div>
+        </section>
+
+        <!-- Category 4: Sports & Category 5: Beauty (similar structure with 4 products each) -->
+    </main>
+
+    <div class="back-to-top">
+        <a href="#">Back to top</a>
+    </div>
+
+    <footer class="amazon-footer">
+        <div class="footer-columns">
+
+            <div class="footer-col">
+                <h4>Get to Know Us</h4>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Amazon Devices</a>
+                <a href="#">Amazon Science</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Make Money with Us</h4>
+                <a href="#">Sell products on Amazon</a>
+                <a href="#">Sell on Amazon Business</a>
+                <a href="#">Sell apps on Amazon</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Advertise Your Products</a>
+                <a href="#">Self-Publish with Us</a>
+                <a href="#">Host an Amazon Hub</a>
+                <a href="#">› See More Make Money with Us</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Amazon Payment Products</h4>
+                <a href="#">Amazon Business Card</a>
+                <a href="#">Shop with Points</a>
+                <a href="#">Reload Your Balance</a>
+                <a href="#">Amazon Currency Converter</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Let Us Help You</h4>
+                <a href="#">Amazon and COVID-19</a>
+                <a href="#">Your Account</a>
+                <a href="#">Your Orders</a>
+                <a href="#">Shipping Rates & Policies</a>
+                <a href="#">Returns & Replacements</a>
+                <a href="#">Manage Your Content and Devices</a>
+                <a href="#">Help</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="./assets/Screenshot_2026-01-10_073802-removebg-preview.png"
+                    alt="">
+            </div>
+
+            <div class="footer-selectors">
+                <span>🌐 English ▼</span>
+                <span>PKR Pakistani Rupee</span>
+                <span>🇺🇸 United States ▼</span>
+            </div>
+        </div>
+    </footer>
+
+    <section class="amazon-services-footer">
+        <div class="services-grid">
+
+            <div>
+                <a href="#"><strong>Amazon Music</strong><br><span>Stream millions of songs</span></a>
+                <a href="#"><strong>Amazon Business</strong><br><span>Everything For Your Business</span></a>
+                <a href="#"><strong>IMDbPro</strong><br><span>Get Info Entertainment Professionals Need</span></a>
+                <a href="#"><strong>eero WiFi</strong><br><span>Stream 4K Video in Every Room</span></a>
+            </div>
+
+            <div>
+                <a href="#"><strong>Amazon Ads</strong><br><span>Reach customers wherever they spend their
+                        time</span></a>
+                <a href="#"><strong>AmazonGlobal</strong><br><span>Ship Orders Internationally</span></a>
+                <a href="#"><strong>Kindle Direct Publishing</strong><br><span>Indie Digital & Print
+                        Publishing</span></a>
+                <a href="#"><strong>Blink</strong><br><span>Smart Security for Every Home</span></a>
+            </div>
+
+            <div>
+                <a href="#"><strong>6pm</strong><br><span>Score deals on fashion brands</span></a>
+                <a href="#"><strong>Amazon Web Services</strong><br><span>Scalable Cloud Computing Services</span></a>
+                <a href="#"><strong>Prime Video Direct</strong><br><span>Video Distribution Made Easy</span></a>
+                <a href="#"><strong>Neighbors App</strong><br><span>Real-Time Crime & Safety Alerts</span></a>
+            </div>
+
+            <div>
+                <a href="#"><strong>AbeBooks</strong><br><span>Books, art & collectibles</span></a>
+                <a href="#"><strong>Audible</strong><br><span>Listen to Books & Original Audio Performances</span></a>
+                <a href="#"><strong>Shopbop</strong><br><span>Designer Fashion Brands</span></a>
+                <a href="#"><strong>Amazon Subscription Boxes</strong><br><span>Top subscription boxes – right to your
+                        door</span></a>
+            </div>
+
+            <div>
+                <a href="#"><strong>ACX</strong><br><span>Audiobook Publishing Made Easy</span></a>
+                <a href="#"><strong>Box Office Mojo</strong><br><span>Find Movie Box Office Data</span></a>
+                <a href="#"><strong>Woot!</strong><br><span>Deals and Shenanigans</span></a>
+                <a href="#"><strong>PillPack</strong><br><span>Pharmacy Simplified</span></a>
+            </div>
+
+            <div>
+                <a href="#"><strong>Sell on Amazon</strong><br><span>Start a Selling Account</span></a>
+                <a href="#"><strong>Goodreads</strong><br><span>Book reviews & recommendations</span></a>
+                <a href="#"><strong>Zappos</strong><br><span>Shoes & Clothing</span></a>
+            </div>
+
+            <div>
+                <a href="#"><strong>Veego</strong><br><span>Shipping Software Inventory Management</span></a>
+                <a href="#"><strong>IMDb</strong><br><span>Movies, TV & Celebrities</span></a>
+                <a href="#"><strong>Ring</strong><br><span>Smart Home Security Systems</span></a>
+            </div>
+
+        </div>
+
+        <div class="services-bottom">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Consumer Health Data Privacy Disclosure</a>
+            <a href="#">Your Ads Privacy Choices</a>
+            <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</html>

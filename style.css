@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #a09999;
+}
+
+
+
+.amazon-nav-main {
+    width: 100%;
+}
+
+.all-an{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-belt {
+    background-color: #131921;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px; 
+    color: white;
+    justify-content: space-between;
+}
+
+.amazon-logo {
+    background-image: url('images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-location {
+    margin-left: 15px;
+    cursor: pointer;
+
+}
+
+.txt-1 {
+    font-size: 12px;
+    color: #ccc;
+    line-height: 1;
+}
+
+.txt-2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.loc-box {
+    display: flex;
+    align-items: center;
+}
+
+.loc-box i {
+    margin-right: 3px;
+    font-size: 15px;
+}
+ 
+.nav-search-container {
+    flex: 1; display:
+    flex; height: 40px;
+    margin: 0 15px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: white;
+}
+
+.search-dropdown {
+    background: #f3f3f3;
+    color: #555;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 12px;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.search-icon-box {
+    background: #febd69;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    color: #333;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-lang, .nav-account, .nav-orders, .nav-cart {
+    margin-left: 15px;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-lang img {
+    width: 22px;
+    margin-right: 5px;
+}
+
+.nav-cart {
+    display: flex;
+    align-items: center;
+}
+
+.nav-cart i {
+    font-size: 28px;
+    color: white;
+    margin-right: 5px;
+}
+
+.nav-bottom-panel {
+    background: #232f3e;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.all-menu {
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    margin-right: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-cs-header {
+    background: #232f3e;
+    border-top: 1px solid #485769;
+    height: 50px;
+}
+
+.cs-wrap {
+    padding-left: 6%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: white;
+}
+
+.cs-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sep {
+    width: 1px;
+    height: 26px;
+    background: #666;
+    margin: 0 20px;
+}
+
+.cs-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.cs-links a.active {
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+.winter-ribbon {
+    background-color: #f7fafa;
+    border-bottom: 1px solid #ddd; 
+    display: flex;
+    padding: 15px 6%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.ribbon-item {
+    flex: 1;
+    font-size: 13px;
+    color: #111;
+    line-height: 1.4;
+}
+
+.ribbon-item b {
+    font-size: 13.5px;
+}
+
+.ribbon-item a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.ribbon-item a:hover {
+    text-decoration: underline;
+}
+
+.main-wrapper {
+    padding: 40px 6%;
+}
+
+.search-library-txt {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.library-search-box {
+    width: 100%;
+    max-width: 800px; 
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin-bottom: 40px; 
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1); 
+}
+
+.library-search-box i {
+    color: #888;
+    margin-right: 10px;
+}
+
+.library-search-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+}
+
+.welcome-heading {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.welcome-sub {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+
+
+.select{
+    padding: 10px 5px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #ccc;
+    outline: none;
+}
+
+
+
+.input{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    /* padding-right: 80px; */
+    width: 280%;
+    outline: none;
+}
+
+.Searchbutton{
+    background-color: #f8bd19;
+}
+
+.loc {
+    font-weight: 600;
+    color: White;
+}
+
+.del{
+    color: #ccc;
+}
+
+.cardsec{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.herocardsmain{
+    color: #1a1a1a;
+    background-color: white;
+}
+
+.innerimgs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  background: #f5f5f5;
+  padding: 20px 0;
+}
+
+
+.carousel {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 50px; 
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  min-width: 200px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;     
+  background: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.left {
+  left: 0;      
+  padding: 15px;            
+  border-radius: 5px;
+}
+
+.right {
+  right: 0;
+  padding: 15px;            
+  border-radius: 5px;
+}
+
+.back-to-top {
+    background: #37475a;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.back-to-top a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.amazon-footer {
+    background: #232f3e;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    display: block;
+    color: #ddd;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 6px 0;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #3a4553;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-selectors span {
+    display: inline-block;
+    border: 1px solid #848688;
+    padding: 6px 10px;
+    margin: 5px;
+    font-size: 13px;
+    color: #ddd;
+    border-radius: 3px;
+}
+
+.amazon-services-footer {
+    background: #131a22;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.services-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+.services-grid a {
+    display: block;
+    color: #ddd;
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.services-grid strong {
+    color: #fff;
+    font-size: 13px;
+}
+
+.services-grid span {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.services-grid a:hover strong {
+    text-decoration: underline;
+}
+
+.services-bottom {
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.services-bottom a {
+    color: #ddd;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.services-bottom a:hover {
+    text-decoration: underline;
+}
+
+.services-bottom p {
+    color: #aaa;
+    margin-top: 10px;
+}
+
+
+@media (min-width : 1400px){
+ 
+    .input{
+        width: 350%;
+    }
+
+}

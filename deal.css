@@ -1,0 +1,518 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f5f5f5;
+    color: #111;
+}
+
+.head-navbar {
+    background-color: #0F1111;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.del {
+    font-size: 12px;
+    color: #ccc;
+    line-height: 1.2;
+}
+
+.nav-div-2 {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.pak {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-wrapper {
+    position: relative;
+    display: flex;
+    height: 2.6rem;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+}
+
+.search-category {
+    background: #f3f3f3;
+    border-right: 1px solid #ddd;
+    color: #555;
+    font-size: 12px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.search-category:hover {
+    background: #e8e8e8;
+}
+
+.search-category::after {
+    content: "▼";
+    font-size: 9px;
+    margin-left: 6px;
+    color: #666;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+    width: 500px;
+}
+
+.search-button {
+    width: 56px;
+    background: #febd69;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button:hover {
+    background: #f3a847;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    fill: #111;
+}
+
+.flag-div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.flag {
+    width: 20px;
+    height: 15px;
+}
+
+.flag-sel {
+    background-color: #0F1111;
+    color: white;
+    border: none;
+    font-size: bold;
+    cursor: pointer;
+}
+
+.nav-account {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    padding: 0 8px;
+    margin: 0 2px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.hello-line {
+    font-size: 12px;
+    color: #ccc;
+    line-height: 1.2;
+}
+
+.account-text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.255;
+    white-space: nowrap;
+}
+
+.arrow {
+    font-size: 10px;
+    margin-left: 4px;
+    color: #ccc;
+}
+
+.repums {
+    font-size: 12px;
+    color: #ccc;
+    line-height: 1.2;
+}
+
+.repums-text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.255;
+    white-space: nowrap;
+}
+
+.card-div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart-p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar {
+    padding-top: 12px;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #1a1c27;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu-icon {
+    font-size: 26px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.navbar-2 {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 5rem;
+}
+
+.nav2-div {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    padding-top: 30px;
+    padding-left: 80px;
+}
+
+.li-nav2 {
+    list-style: none;
+}
+
+.li-nav2 a {
+    text-decoration: none;
+    color: #4c0cfc;
+}
+/* === TODAY'S DEALS SPECIFIC STYLES === */
+.deals-nav { background: #232F3E; border-top: 1px solid #3A4553; }
+.deals-nav-container { max-width: 1400px; margin: 0 auto; padding: 0.75rem 1rem; display: flex; gap: 1.5rem; }
+.nav-item { color: #FFF; text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.9rem; }
+.nav-item.active, .nav-item:hover { background: #37475A; }
+
+.deals-container { max-width: 1400px; margin: 0 auto; padding: 2rem 1rem; }
+
+.category-section { margin-bottom: 4rem; }
+.category-header { margin-bottom: 2rem; }
+.category-header h2 { font-size: 1.8rem; color: #111; display: inline-flex; align-items: center; gap: 1rem; }
+.category-badge { background: #232F3E; color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.td {
+    justify-content: center;
+    display: flex;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+
+.product-image {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image img { transform: scale(1.08); }
+
+.deal-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.deal-timer {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(0,0,0,0.85);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.product-info { padding: 1.5rem; }
+.category-tag {
+    background: #F7F7F7;
+    color: #666;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+
+.electronics { border-left: 4px solid #FF9900; }
+.home { border-left: 4px solid #00B5E2; }
+.fashion { border-left: 4px solid #FF69B4; }
+
+.product-info h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    color: #111;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.price-section {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.current-price {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #B12704;
+}
+
+.original-price {
+    font-size: 1.1rem;
+    text-decoration: line-through;
+    color: #666;
+}
+
+.savings {
+    background: #28a745;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-footer span {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.buy-btn {
+    background: linear-gradient(135deg, #FF9900, #FF7F00);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.buy-btn:hover {
+    background: linear-gradient(135deg, #E68900, #D97700);
+    transform: translateY(-2px);
+}
+
+.back-to-top {
+    background: #37475a;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.back-to-top a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.amazon-footer {
+    background: #232f3e;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    display: block;
+    color: #ddd;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 6px 0;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #3a4553;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-selectors span {
+    display: inline-block;
+    border: 1px solid #848688;
+    padding: 6px 10px;
+    margin: 5px;
+    font-size: 13px;
+    color: #ddd;
+    border-radius: 3px;
+}
+
+.amazon-services-footer {
+    background: #131a22;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.services-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+.services-grid a {
+    display: block;
+    color: #ddd;
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.services-grid strong {
+    color: #fff;
+    font-size: 13px;
+}
+
+.services-grid span {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.services-grid a:hover strong {
+    text-decoration: underline;
+}
+
+.services-bottom {
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.services-bottom a {
+    color: #ddd;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.services-bottom a:hover {
+    text-decoration: underline;
+}
+
+.services-bottom p {
+    color: #aaa;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .products-grid { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+    .nav-container { flex-direction: column; gap: 1rem; }
+}
